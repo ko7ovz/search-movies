@@ -30,7 +30,7 @@ function requestApi(url){
             inner += `<div class="col-3">
                             <div class="posters" id="posters">
                                 <img src='https://image.tmdb.org/t/p/w500${imgs}' id = 'imgInner' alt="img"
-                                 width="220px" height="285px">
+                                 width="250px" height="338px">
                             </div>              
                       </div> 
                       <div class="col-7">
