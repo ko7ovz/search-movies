@@ -30,7 +30,7 @@ function requestApi(url){
             inner += `<div class="col-3">
                             <div class="posters" id="posters">
                                 <img src='https://image.tmdb.org/t/p/w500${imgs}' id = 'imgInner' alt="img"
-                                 width="200px" height="250px">
+                                 width="220px" height="285px">
                             </div>              
                       </div> 
                       <div class="col-7">
@@ -41,7 +41,7 @@ function requestApi(url){
                                 <p id="overview">${overview}</p>
                             </div> 
                             <div class="rating d-inline-flex">
-                                 <h6>${rating}</h6><img src="../../search-movies/js/star.png" width="15px" height="35px" id="star">
+                                 <h6>${rating}</h6><img src="star.png" width="15px" height="35px" id="star">
                              </div>               
                       </div>
                       <div class="col-2">                       
