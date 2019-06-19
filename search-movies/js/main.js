@@ -20,9 +20,6 @@ function requestApi(url){
         output.results.forEach(function (item) {
             let nameItem = item.name || item.title, imgs = item.poster_path,
                 dates = item.first_air_date || item.release_date, rate = item.vote_average, over = item.overview;
-            if (dates === undefined){
-                dates = '';
-            }
             overview = over;
             rating = `Rating: ${rate}`;
             date = dates;
