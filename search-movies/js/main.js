@@ -46,7 +46,6 @@ function requestApi(url){
                                 <h6>${date}</h6>
                             </div>                       
                       </div>`;
-            console.log(output.results);
         });
         movies.innerHTML = inner;
     });
