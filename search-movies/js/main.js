@@ -38,7 +38,7 @@ function requestApi(url){
                                 <p id="overview">${overview}</p>
                             </div> 
                             <div class="rating d-inline-flex">
-                                 <h6>${rating}</h6><img src="star.png" width="15px" height="35px" id="star">
+                                 <h6>${rating}/10</h6>
                              </div>               
                       </div>
                       <div class="col-2">                       
