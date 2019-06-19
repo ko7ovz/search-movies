@@ -5,6 +5,7 @@ function apiSearch(event) {
     const searchText = document.querySelector('#searchText').value;
     const server = 'https://api.themoviedb.org/3/search/multi?api_key=4eda6ad7231230beb4c59e4ca893b654&language=ru&query='
         + searchText;
+    const url = 'https://image.tmdb.org/t/p/w500';
     movies.innerHTML = 'Loading..';
     fetch(server)
         .then(function (value) {
@@ -18,10 +19,13 @@ function apiSearch(event) {
                 overview = over;
                 rating = `Rating: ${rate}`;
                 date = dates;
-                images += `<img src='https://image.tmdb.org/t/p/w500${imgs}'`;
+                images = url + imgs ;
+                if (item.poster_path === null) {
+                    images = 'https://i.ibb.co/W36TD0c/glo.jpg';
+                }
                 inner += `<div class="col-3">
                             <div class="posters" id="posters">
-                                <img src='https://image.tmdb.org/t/p/w500${imgs}' id = 'imgInner' alt="img"
+                                <img src='${images}' id = 'imgInner' alt="${nameItem}"
                                  width="250px" height="338px">
                             </div>
                       </div>
@@ -50,3 +54,4 @@ function apiSearch(event) {
     })
 }
 searchForm.addEventListener('submit', apiSearch);
+
