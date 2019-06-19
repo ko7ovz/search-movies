@@ -35,7 +35,7 @@ function requestApi(url){
                                 <h2>${nameItem}</h2>
                             </div>
                             <div class="overview">
-                                <p id="overview">${overview}</p>
+                                <p>${overview}</p>
                             </div> 
                             <div class="rating d-inline-flex">
                                  <h6>${rating}/10</h6>
