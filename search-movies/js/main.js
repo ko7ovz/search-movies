@@ -22,7 +22,7 @@ function apiSearch(event) {
             }
             output.results.forEach(function (item) {
                 console.log(item.media_type);
-                let nameItem = item.name || item.title, date = item.first_air_date || item.release_date,
+                let itemName = item.name || item.title, date = item.first_air_date || item.release_date,
                     rate = item.vote_average, overview = item.overview;
                 rating = `Rating: ${rate}`;
                 images = item.poster_path ? posterUrl + item.poster_path : './images/outOfService.jpg';
@@ -30,13 +30,13 @@ function apiSearch(event) {
                 if(item.media_type === 'movie' || item.media_type === 'tv' ) {
                     inner += `<div class="col-3">
                                 <div class="posters" id="posters">
-                                    <img src='${images}' id = 'imgInner' alt="${nameItem}"
+                                    <img src='${images}' id = 'imgInner' alt="${itemName}"
                                      width="250px" height="338px">
                                 </div>
                           </div>
                           <div class="col-7">
                                 <div class="names d-inline-flex">
-                                    <h2>${nameItem}</h2>
+                                    <h2>${itemName}</h2>
                                 </div>
                                 <div class="overview">
                                     <p>${overview}</p>
