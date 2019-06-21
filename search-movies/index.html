@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Luckiest+Guy&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Luckiest+Guy|Noto+Sans+HK&display=swap">
     <link rel="shortcut icon" href="images/main-icon.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -15,14 +15,14 @@
 <section class="header" id="header">
     <div class="container">
         <div class="row">
-            <div class="col-4 offset-1">
-                <div class="header__title">
-                    <h1><a href="#">KO7</a></h1>
-                </div>
-            </div>
-            <div class="col-5 offset-2">
-                <div class="header__subtitle">
-                    <h3><a href="#">Search your favourite movies</a></h3>
+            <div class="col-12">
+                <div class="header__inner d-flex">
+                    <div class="header__inner_title text-uppercase">
+                        <h1><a href="index.html">ko7</a></h1>
+                    </div>
+                    <div class="header__inner_subtitle text-uppercase">
+                        <h4>search your favourite movies</h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -30,23 +30,33 @@
 </section>
 <section class="search" id="search">
     <div class="container">
-        <div class="col-12">
-            <div class="search__inner">
-                <h3 class="text-center">Enter title</h3>
-                <form id="search-form">
-                    <input type="text" class="form-control" id="searchText"
-                           placeholder="..."></form>
+        <div class="row">
+            <div class="col-12">
+                <div class="search__title text-center">
+                    <h2>Enter title</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 offset-1">
+                <div class="search__field">
+                    <form id="search-form" class="search-form">
+                        <input type="text" class="form-control" id="searchText" placeholder="...">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <section class="content" id="content">
     <div class="container">
-        <div class="row" id="movies">
+        <div class="searchBy">
 
+        </div>
+        <div class="row d-block" id="movies">
         </div>
     </div>
 </section>
-<script src="js/main.js" defer></script>
+<script src="js/main.js"></script>
 </body>
 </html>
