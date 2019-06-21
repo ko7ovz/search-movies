@@ -1,85 +1,127 @@
+.col-3, .col-2 {
+    padding-left: 0;
+    padding-right: 0;
+}
+body {
+    line-height: 0;
+}
 /* Header */
 .header {
-  height: 70px;
-  background-color: #3AAFA9;
-  font-family: 'Luckiest Guy', cursive; }
-  .header a {
-    text-decoration: none; }
-
-.header__title {
-  display: flex;
-  padding-top: 4px; }
-
-.header__subtitle {
-  padding-top: 19.5px; }
-
-.header__title a {
-  color: #17252A;
-  font-size: 50px; }
-
-.header__subtitle a {
-  color: #DEF2F1;
-  margin: auto; }
-
+    height: 50px;
+    background-color: #3AAFA9;
+    font-family: 'Luckiest Guy', cursive;
+}
+.header__inner {
+    justify-content: space-between;
+    align-items: center;
+}
+.header__inner_title h1 {
+    font-size: 50px;
+    line-height: 1;
+}
+.header__inner_title a {
+    color: #000;
+    text-decoration: none;
+}
+.header__inner_subtitle h4 {
+    color: #EDEEF0;
+    line-height: 1;
+    font-size: 25px;
+    text-shadow: 0 0 10px #000;
+}
 /* Search */
 .search {
-  padding-top: 30px;
-  font-family: 'Josefin Sans', sans-serif; }
-  .search h3 {
-    font-size: 35px;
-    font-weight: bold;
-    padding-bottom: 10px;
-    color: #17252A; }
-  .search input {
-    width: 50%;
-    margin: 0 auto; }
-
-.content {
-  padding-top: 50px; }
-
-.names h2 {
-  font-size: 25px;
-  font-family: 'Luckiest Guy', cursive; }
-
-#movies img {
-  margin-bottom: 35px;
-  padding-top: 20px; }
-
-#movies h2, h6 {
-  padding-top: 20px; }
-.rating img{
-    margin-top: 12px;
+    padding-top: 50px;
+    font-family: 'Josefin Sans', sans-serif;
 }
-.rating {
+.search__title h2 {
+    font-weight: 700;
+    font-size: 50px;
+}
+.search-form {
+    padding-top: 30px;
+}
 
-}
-.rating h6 {
-    font-size: 15px;
-    font-weight: bold;
-    position: absolute;
-    bottom: 0;
-    right: 25px;
-}
-.rating #star {
-    font-size: 15px;
-    font-weight: bold;
-    position: absolute;
-    bottom: -25px;
-    right: 10px;
-}
+/* Spinner */
 .spinner {
-    margin: 0 auto;
+    margin: 100px auto;
     width: 100px;
     height: 100px;
+    border: 10px dashed #aeaeae;
     border-radius: 50%;
-    border: 10px dashed #aaa;
     border-right-color: #555;
     border-bottom-color: #000;
     border-left-color: transparent;
     animation: spin 500ms infinite linear;
 }
-@keyframes spin {
+@keyframes spin{
     100%{
         transform: rotate(360deg);
     }
+}
+/* Content */
+.movies {
+    height: 450px;
+    margin-top: 2%;
+    background-color: #EDF0F5;
+    border: 1px solid #000;
+}
+.names {
+    padding-top: 5px;
+    font-family: 'Luckiest Guy', cursive;
+}
+.names h2 {
+    font-size: 30px;
+}
+.overview {
+    font-family: 'Noto Sans HK', sans-serif;
+}
+.overview p {
+    line-height: 1.5;
+    font-size: 20px;
+}
+.date {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+.rating {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.rating img {
+    margin-bottom: 4px;
+    margin-left: 3px;
+}
+.date {
+    padding-top: 5px;
+    margin-left: 10%;
+}
+.date h6 {
+    font-size: 14px;
+}
+.oops {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 10%;
+    font-size: 50px;
+}
+.trends h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 0;
+}
+.trends {
+    margin-top: 5%;
+}
+.trends1 {
+    color: #89C6F2;
+    margin-top: 5%;
+    font-size: 20px!important;
+}
+.tr img {
+    margin-bottom: 15px;
+    margin-left: 7px;
 }
